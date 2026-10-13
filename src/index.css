@@ -1,0 +1,102 @@
+/* Video Emotion Recognition - Soft Light UI */
+:root {
+  --bg-main: #ebf1f6;
+  --bg-gradient: linear-gradient(145deg, #eff4f9 0%, #e5edf5 100%);
+  --bg-card: #ffffff;
+  --bg-card-subtle: #f5f8fc;
+  --bg-card-inner: #edf2f8;
+  --border-color: #dce4ed;
+  --border-hover: #cbd5e1;
+  --border-light: rgba(255, 255, 255, 0.9);
+  
+  --accent: #0284c7;
+  --accent-light: #38bdf8;
+  --accent-muted: rgba(2, 132, 199, 0.08);
+  --accent-hover: #0369a1;
+  
+  --text-primary: #0f172a;
+  --text-secondary: #5a6a80;
+  --text-dim: #94a3b8;
+  
+  --green: #16a34a;
+  --green-muted: rgba(22, 163, 74, 0.1);
+  --red: #dc2626;
+  --red-muted: rgba(220, 38, 38, 0.08);
+  
+  --font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 26px;
+  
+  --shadow-sm: 0 2px 6px rgba(148, 163, 184, 0.12);
+  --shadow-card: 0 12px 32px -4px rgba(112, 135, 164, 0.18), 0 4px 12px -2px rgba(112, 135, 164, 0.08);
+  --shadow-elevated: 0 16px 40px -6px rgba(112, 135, 164, 0.22);
+  --shadow-inner: inset 0 2px 4px rgba(148, 163, 184, 0.08);
+  --shadow-soft-neumorph: 6px 6px 16px rgba(180, 195, 215, 0.35), -6px -6px 16px rgba(255, 255, 255, 0.9);
+  
+  --transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg-gradient);
+  background-color: var(--bg-main);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Custom smooth light scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
